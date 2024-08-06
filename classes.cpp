@@ -61,13 +61,6 @@ using namespace std;
                  
             }
             //use randIndex to get split random word, set split random word, then remove that index and set split word update list
-
-            // for(int k=0; k < splitVector.size(); k++) {
-            //         for(int p=0; p < splitVector[k].size(); p++) {
-            //             cout << splitVector[k].at(p) << " ";
-            //         }
-            //         cout << endl;
-            //     } 
             
         return splitVector;
 
@@ -82,10 +75,6 @@ using namespace std;
             
             randWordSplit = splitWordsVector[indexOfRandWord];
 
-            // for(int k = 0; k < randWordSplit.size(); k++) {
-            //     cout << randWordSplit[k] << " ";
-            // }
-            // cout << endl;
     }
 
     void Word::set_split_vector_without_rand_word() {
@@ -110,7 +99,7 @@ using namespace std;
         
 
         } //loops through all letter combinations, checks if any combinations match any word in total wordList, if so, appends word to anagramList
-        //print if size = 0 then no anagramas, else print anagrams
+        //print if size = 0 then no anagrams, else print anagrams
         
         
         if (splitAnagramVector.size() == 0) { //final print/print results if there are any
