@@ -1,12 +1,6 @@
-/* CSCI 200: Final Project
- *
- * Author: XXXX (Ryan Pike)
- * Resources used (Office Hours, Tutoring, Other Students, etc & in what capacity):
- *     // list here any outside assistance you used/received while following the
- *     // CS@Mines Collaboration Policy and the Mines Academic Code of Honor
- *  https://www.educba.com/c-plus-plus-find/ used to figure out parameters for the .find() function 
- *
- * XXXXXXXX (Anagram algorithm)
+/* 
+ANAGRAM ALGORITHM
+Ryan Pike
  */
 #include <iostream>
 #include <cstdlib> 
@@ -19,7 +13,7 @@ int main() {
 
     Word userWord;
     
-    int x; // change so no global vars used
+    int x; 
     cout << "Input a word length between 3-8 letters" << endl;
     cin >> x;
     
@@ -29,7 +23,7 @@ int main() {
     }  
     
     userWord.set_word_length(x);
-    userWord.get_word_length(); //why does vector size equal 0 if I have this and split in there?
+    userWord.get_word_length(); 
     userWord.set_sized_word_list(userWord.get_sized_word_list());
     userWord.set_index(userWord.get_rand_word());
     userWord.set_split_words_vector(userWord.split_word_list_into_letters());
